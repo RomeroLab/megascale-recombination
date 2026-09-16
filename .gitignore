@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+ngs/reads/
+ngs/output/
+ngs/logs/
+ngs/inputs.txt
+ngs/*_parsed_data.txt

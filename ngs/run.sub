@@ -1,0 +1,16 @@
+# Submit from ngs/ after creating logs/ and placing natural-library FASTQs in reads/.
+# Workers must have python3, Biopython, and mafft available in their PATH.
+universe = vanilla
+executable = /bin/bash
+arguments = run.sh $(input_name)
+getenv = PATH,PYTHONPATH,MAFFT_BINARIES
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = run.sh,fastq2chimera.py,natural_aligned.fasta,reads/$(input_name)
+log = logs/map_$(Cluster).log
+output = logs/map_$(Cluster)_$(Process).out
+error = logs/map_$(Cluster)_$(Process).err
+request_cpus = 1
+request_memory = 2GB
+request_disk = 2GB
+queue input_name from inputs.txt

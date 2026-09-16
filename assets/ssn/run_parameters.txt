@@ -1,0 +1,35 @@
+PETase sequence similarity network
+
+Transcribed from SSN_run_params.docx, including both embedded screenshots.
+The document explicitly states that RepNode 50 was used.
+
+Network name: PETase80
+Analysis job: 177603
+EST dataset job: 167987
+Input: Sequence BLAST (Option A), job name PETase
+Database: UniProt 2025-03; InterPro 106
+BLAST database: UniRef90
+BLAST retrieval E-value field: 5 (as displayed)
+SSN edge calculation E-value field: 5 (as displayed)
+Maximum retrieved sequences: 1,000
+Actual retrieved sequences: 1,000
+Exclude fragments: No
+Dataset sequences: 1,001, including the submitted query
+Unique sequences: 1,000
+Dataset edges: 500,461
+Convergence ratio: 1.000
+Alignment score: 80
+Minimum / maximum length: 220 / 500 amino acids
+Sequences after length filtering: 992
+Representative-node identity threshold: 50%
+Representative network: 403 nodes, 8,069 edges
+
+Files
+167987_PETase80_repnode-.50_ssn.xgmml: original network; import in Cytoscape.
+PETase80_5.png: author-identified candidate image, copied unchanged. Its exact
+use in the final figure has not been confirmed.
+
+The query sequence is hidden behind a View Sequence link in the screenshot;
+it cannot be recovered from the document. The saved network can be inspected
+without rerunning the web service. The original text displays the E-value
+fields as 5; no sign or exponent has been inferred here.
