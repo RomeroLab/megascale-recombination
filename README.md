@@ -33,11 +33,6 @@ Open a notebook in your Jupyter frontend or notebook editor, select this environ
 - `assets/structure/petase_recombination_blocks.pse`: the original PyMOL session, renamed from `structure.pse`. Open it in PyMOL.
 - `ngs/`: natural-library ONT mapping script, aligned reference, and local/HTCondor running instructions.
 
-## Reproducibility notes
-
-The ten full constructs match the natural records in the original saved FASTA exactly. The notebook preserves the original final adaptor sequences, including their reported length check. Figure 3 retains the 20,000 / 20,000 / 1,000 rank cutoffs and read-weighted frequencies. Its diversity sample uses a fixed seed; the historical unseeded histogram is not expected to match bin for bin. Figure 4C replots the saved external identity matrix; its original multiple alignment is not included. Experimental panels retain the original pasted means and SDs, checked against the supplied workbooks at their displayed precision.
-
-Raw sequencing data will be linked here after SRA deposition. The mapping-to-sample filtering/aggregation step and barcode-to-sample assignments still need to be documented (see `ngs/README.md`). Add the publication citation when available.
 
 ## License
 
